@@ -1,0 +1,248 @@
+@font-face {
+    font-family: rosela;
+    src: url(font/Rosela.ttf);
+}
+
+.wlsites  ul li{
+    list-style-type: disc;
+     font-size: large;
+}
+.wlsites h3{
+    font-size: 30px;
+    margin-bottom: 8px;
+    /*text-align: center;*/
+}
+.wlsites p{
+    margin-bottom: 3%;
+    font-weight: 700;
+}
+
+.container2 {
+    padding: 15px 20px;
+    padding-bottom: 100px;
+    /*background: url(sinharaja.webp);*/
+}
+.wlsites{
+    padding: 15px 50px;
+}
+.wlsites h1{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: black;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    font-size: 50px;
+}
+@media(max-width: 550px){
+    .wlsites h1{
+        font-size:25px;
+        padding-bottom: 25px;
+    }
+    .wlsites h3{
+        font-size: 15px;
+    }
+    .wlsites p{
+        font-size: 13px;
+        font-weight: 700;
+    }
+}
+@media(max-width: 1024px){
+
+    .wlsites{
+        padding: 10px;;
+    }
+}
+.nationalparkbg{
+    background: url(Images/NationalParkbg.png) fixed;
+    background-size: cover;
+    height: auto;
+}
+/*------------------MAP-----------------------*/
+.googlemap {
+    width: 100%;
+    float: left;
+    height: 450px;
+    padding-right: 20px ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.map-wrapper{
+    max-width: 500px;
+}
+@media (max-width:500px) {
+    .googlemap{
+        height: 400px;
+    }
+    
+}
+/*--------------------------gallery--------------------*/
+.gallery {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding-bottom: 10%;
+    padding: 15px 50px;
+}
+.galleryimg{
+    flex-wrap: wrap;
+    width: 320px;
+    height: 300px;
+    margin: 10px 10px;
+    transition: 1s;
+    filter: saturate(80%);
+}
+@media (max-width:1024px) {
+    .gallery{
+        padding: 0;
+    }
+}
+.galleryimg:hover{
+    transform: scale(1.1);
+    filter: opacity(130%);
+}
+/*-------------------table-----------------------*/
+.table{
+    padding:  15px 50px;
+    line-height: 25px;
+    margin-top:2%;
+}
+.table-content{
+    border-collapse:collapse ;
+    background:#F2EAE4;
+    width: 100%;
+}
+th,td {
+    padding: 1rem ;
+    border: solid black 1px;
+}
+tr:nth-child(even){
+    background: #d5d2ad7b;
+}
+@media (max-width:768px) {
+    th{
+        display: none;
+    }
+    td{
+        display: block;
+    }
+    td::before{
+        content: attr(data-cell) ": ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    .table{
+        padding:0px;
+    }
+}
+@media (max-width:1024px){
+    th,td {
+        padding: 1rem;
+    }
+    .table{
+        padding:10px;
+    }
+}
+#check1,#check2,#check3,#check4,#check5,#check6,#check7,#check8,#check9{
+    display: none;
+}
+#check1:checked ~ .content{
+    display: block;
+}
+#check1:checked ~ label{
+    display: none;
+}
+#check2:checked ~ .content{
+    display: block;
+}
+#check2:checked ~ label{
+    display: none;
+}
+#check3:checked ~ .content{
+    display: block;
+}
+#check3:checked ~ label{
+    display: none;
+}
+#check4:checked ~ .content{
+    display: block;
+}
+#check4:checked ~ label{
+    display: none;
+}
+#check5:checked ~ .content{
+    display: block;
+}
+#check5:checked ~ label{
+    display: none;
+}
+#check6:checked ~ .content{
+    display: block;
+}
+#check6:checked ~ label{
+    display: none;
+}
+#check7:checked ~ .content{
+    display: block;
+}
+#check7:checked ~ label{
+    display: none;
+}
+#check8:checked ~ .content{
+    display: block;
+}
+#check8:checked ~ label{
+    display: none;
+}
+#check9:checked ~ .content{
+    display: block;
+}
+#check9:checked ~ label{
+    display: none;
+}
+.content{
+    display: none;
+}
+label:hover{
+    background-color: #0d1b0882;
+}
+label{
+    display: inline-block;
+    cursor: pointer;
+    color: azure;
+    background-color:#888553;
+    padding: 3px 13px;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+
+
+/*----------------NEXT--------------------*/
+.next h1{
+    text-align:right;
+   /* padding-left: 60%;*/
+   padding-right: 50px;
+   margin-top: 5%;
+   font-size: 25px;
+   text-decoration: none;
+}
+.next a{
+    text-decoration: none;
+    color: #000;
+}
+.next a:hover{
+    color: #2A4024;
+}
+/*-------------------BACK----------------------*/
+.back h1{
+    text-align:left;
+   padding-left: 50px;
+   font-size: 25px;
+   text-decoration: none;
+}
+.back a{
+    text-decoration: none;
+    color: #000;
+}
+.back a:hover{
+    color: #2A4024;
+}
